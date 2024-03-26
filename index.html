@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translations</title>
+</head>
+<body>
+    <h1>Translations</h1>
+    <div id="translations"></div>
+
+    <script>
+        // Fetching and displaying translations from JSON
+        fetch('translations.json')
+            .then(response => response.json())
+            .then(data => {
+                const translationsDiv = document.getElementById('translations');
+                for (const subject in data) {
+                    if (data.hasOwnProperty(subject)) {
+                        const translations = data[subject];
+                        translationsDiv.innerHTML += `<h2>${subject}</h2><ul>`;
+                        for (const word in translations) {
+                            if (translations.hasOwnProperty(word)) {
+                                translationsDiv.innerHTML += `<li>${word}: ${translations[word]}</li>`;
+                            }
+                        }
+                        translationsDiv.innerHTML += `</ul>`;
+                    }
+                }
+            })
+            .catch(error => console.error('Error fetching translations:', error));
+    </script>
+</body>
+</html>

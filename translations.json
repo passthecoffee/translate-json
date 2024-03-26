@@ -1,0 +1,25 @@
+{
+    "weather": {
+      "sunny": "heulog",
+      "raining": "bwrw glaw",
+      "windy": "gwyntog",
+      "cloudy": "cymylog",
+      "stormy": "stormus"
+    },
+    "hobbies": {
+      "reading": "darllen",
+      "painting": "peintio",
+      "swimming": "nofio",
+      "gardening": "garddio"
+    },
+    "days_of_week": {
+      "Monday": "Dydd Llun",
+      "Tuesday": "Dydd Mawrth",
+      "Wednesday": "Dydd Mercher",
+      "Thursday": "Dydd Iau",
+      "Friday": "Dydd Gwener",
+      "Saturday": "Dydd Sadwrn",
+      "Sunday": "Dydd Sul"
+    }
+  }
+  
